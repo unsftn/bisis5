@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bisis5.storage.RecordStorageTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-01-05T18:47:55" hostname="Brankos-MacBook-Pro-2.local" time="0.268">
+  <properties/>
+  <testcase name="testAddRecord" classname="bisis5.storage.RecordStorageTest" time="0.249"/>
+  <testcase name="testGetRecord" classname="bisis5.storage.RecordStorageTest" time="0.002"/>
+  <testcase name="testUpdateRecord" classname="bisis5.storage.RecordStorageTest" time="0.002"/>
+  <testcase name="testAddPrimerak" classname="bisis5.storage.RecordStorageTest" time="0.001"/>
+  <testcase name="testRemovePrimerak" classname="bisis5.storage.RecordStorageTest" time="0.001"/>
+  <testcase name="testAddGodina" classname="bisis5.storage.RecordStorageTest" time="0.006"/>
+  <testcase name="testRemoveGodina" classname="bisis5.storage.RecordStorageTest" time="0.001"/>
+  <testcase name="testRemoveRecord" classname="bisis5.storage.RecordStorageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

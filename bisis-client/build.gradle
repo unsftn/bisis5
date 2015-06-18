@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'de.gliderpilot.gradle.jnlp:gradle-jnlp-plugin:+'
+    }
+}
+
+apply plugin: 'application'
+apply plugin: 'de.gliderpilot.jnlp'
+
+dependencies {
+    compile project(':bisis-core')
+    compile project(':bisis-webservice')
+    compile 'com.miglayout:miglayout:3.7.4'
+    compile 'org.apache.cxf:cxf-rt-rs-client:3.0.3'
+    compile 'org.apache.cxf:cxf-rt-transports-local:3.0.3'
+    testCompile project(path: ':bisis-core', configuration: 'testOutput')
+}
+
+test {
+    useTestNG {
+    }
+}
+
+jar {
+    mainClassName = 'bisis5.gui.BisisApp'
+}
+
+// koristi se ovako: gradle createWebstart
+jnlp {
+    useVersions = true
+    withXml {
+        information {
+            title 'BISIS'
+            vendor 'SoftGr8 d.o.o.'
+        }
+        security {
+            'all-permissions'()
+        }
+    }
+    signJarParams = [
+            keystore: new File(project.rootDir, "bisis-client/bisis.jks"),
+            alias: 'bisis',
+            storepass: 'bisis',
+            tsaurl: 'http://timestamp.comodoca.com/rfc3161']
+}
+
+task packWebstart(dependsOn: createWebstartDir) << {
+    ant.war(
+            destfile: new File(project.rootDir, "bisis-client/build/libs/bisis-client-${version}.war"),
+            webxml: new File(project.rootDir, "bisis-client/src/main/webapp/WEB-INF/web.xml")) {
+        fileset(dir: new File(project.rootDir, "bisis-client/src/main/webapp"))
+        fileset(dir: new File(project.rootDir, "bisis-client/build/tmp/jnlp"))
+    }
+}
+
+configure(packWebstart) {
+    group = 'build'
+    description = 'Pakuje instalaciju klijenta u poseban war'
+}
+
+// assemble sada ukljucuje i packWebstart
+assemble.dependsOn packWebstart

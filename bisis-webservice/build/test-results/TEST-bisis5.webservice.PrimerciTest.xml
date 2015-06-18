@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bisis5.webservice.PrimerciTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-01-05T18:47:55" hostname="Brankos-MacBook-Pro-2.local" time="0.155">
+  <properties/>
+  <testcase name="testGetPrimerak" classname="bisis5.webservice.PrimerciTest" time="0.101"/>
+  <testcase name="testGetPrimerak2" classname="bisis5.webservice.PrimerciTest" time="0.009"/>
+  <testcase name="testGetPrimerci2" classname="bisis5.webservice.PrimerciTest" time="0.003"/>
+  <testcase name="testGetPrimerci" classname="bisis5.webservice.PrimerciTest" time="0.011"/>
+  <testcase name="testAddPrimerak" classname="bisis5.webservice.PrimerciTest" time="0.01"/>
+  <testcase name="testAddPrimerak2" classname="bisis5.webservice.PrimerciTest" time="0.006"/>
+  <testcase name="testPutPrimerak" classname="bisis5.webservice.PrimerciTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

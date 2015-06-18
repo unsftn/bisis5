@@ -1,0 +1,22 @@
+apply plugin: 'war'
+
+dependencies {
+    compile project(':bisis-core')
+    compile 'org.mongodb:mongo-java-driver:2.12.4'
+    compile 'org.jongo:jongo:1.1'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    providedCompile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
+    testCompile project(path: ':bisis-core', configuration: 'testOutput')
+    testCompile 'org.apache.cxf:cxf-rt-rs-client:3.0.3'
+    testCompile 'org.apache.cxf:cxf-rt-transports-local:3.0.3'
+    testCompile 'org.apache.cxf:cxf-rt-frontend-jaxrs:3.0.3'
+}
+
+test {
+    useTestNG {
+        suiteXmlFiles << new File(rootDir, "bisis-webservice/src/test/resources/testng.xml")
+    }
+}
+
+war {
+}

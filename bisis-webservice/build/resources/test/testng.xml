@@ -1,0 +1,17 @@
+<!-- testovi se ne izvrsavaju paralelno zbog razlicitih race conditions -->
+<suite name="BisisSuite" parallel="instances">
+    <test name="storage">
+        <classes>
+            <class name="bisis5.storage.UserStorageTest"/>
+            <class name="bisis5.storage.RecordStorageTest"/>
+            <class name="bisis5.storage.CodersStorageTest"/>
+        </classes>
+    </test>
+    <test name="webservice">
+        <classes>
+            <class name="bisis5.webservice.RecordsTest"/>
+            <class name="bisis5.webservice.PrimerciTest"/>
+            <class name="bisis5.webservice.CodersTest"/>
+        </classes>
+    </test>
+</suite>

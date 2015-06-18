@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bisis5.webservice.RecordsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-01-05T18:47:55" hostname="Brankos-MacBook-Pro-2.local" time="0.17">
+  <properties/>
+  <testcase name="testGet" classname="bisis5.webservice.RecordsTest" time="0.122"/>
+  <testcase name="testPost" classname="bisis5.webservice.RecordsTest" time="0.033"/>
+  <testcase name="testPut" classname="bisis5.webservice.RecordsTest" time="0.011"/>
+  <testcase name="testDelete" classname="bisis5.webservice.RecordsTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

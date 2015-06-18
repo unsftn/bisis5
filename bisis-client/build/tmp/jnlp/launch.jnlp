@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jnlp spec='7.0' href='launch.jnlp' version='5.0.0'>
+  <information>
+    <title>BISIS</title>
+    <vendor>SoftGr8 d.o.o.</vendor>
+  </information>
+  <security>
+    <all-permissions />
+  </security>
+  <resources>
+    <j2se version='1.8' />
+    <jar href='lib/commons-lang3.jar' version='3.3.2' />
+    <jar href='lib/commons-beanutils.jar' version='1.9.2' />
+    <jar href='lib/commons-io.jar' version='2.4' />
+    <jar href='lib/commons-codec.jar' version='1.10' />
+    <jar href='lib/jackson-core.jar' version='2.4.4' />
+    <jar href='lib/jackson-annotations.jar' version='2.4.4' />
+    <jar href='lib/jackson-databind.jar' version='2.4.4' />
+    <jar href='lib/jackson-jaxrs-json-provider.jar' version='2.4.4' />
+    <jar href='lib/bisis-core.jar' version='5.0.0' />
+    <jar href='lib/bisis-webservice.jar' version='5.0.0' />
+    <jar href='lib/miglayout.jar' version='3.7.4' />
+    <jar href='lib/cxf-rt-rs-client.jar' version='3.0.3' />
+    <jar href='lib/cxf-rt-transports-local.jar' version='3.0.3' />
+    <jar href='lib/bisis-client.jar' version='5.0.0' main='true' />
+    <jar href='lib/commons-logging.jar' version='1.1.1' />
+    <jar href='lib/commons-collections.jar' version='3.2.1' />
+    <jar href='lib/jackson-jaxrs-base.jar' version='2.4.4' />
+    <jar href='lib/jackson-module-jaxb-annotations.jar' version='2.4.4' />
+    <jar href='lib/mongo-java-driver.jar' version='2.12.4' />
+    <jar href='lib/javax.servlet-api.jar' version='3.1.0' />
+    <jar href='lib/javax.ws.rs-api.jar' version='2.0.1' />
+    <jar href='lib/cxf-rt-transports-http.jar' version='3.0.3' />
+    <jar href='lib/cxf-core.jar' version='3.0.3' />
+    <jar href='lib/cxf-rt-frontend-jaxrs.jar' version='3.0.3' />
+    <jar href='lib/woodstox-core-asl.jar' version='4.4.1' />
+    <jar href='lib/xmlschema-core.jar' version='2.1.0' />
+    <jar href='lib/javax.annotation-api.jar' version='1.2' />
+    <jar href='lib/stax2-api.jar' version='3.1.4' />
+    <property name='jnlp.versionEnabled' value='true' />
+  </resources>
+  <application-desc main-class='bisis5.gui.BisisApp' />
+</jnlp>
